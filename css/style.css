@@ -2,6 +2,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 
 body{
@@ -205,6 +206,7 @@ nav ul li a {
     height: 800px;
     max-width: 768px;
     text-align: center;
+    border: 3px solid #1e1e85;
 }
 
 
@@ -223,14 +225,27 @@ nav ul li a {
     align-items: center;
     padding: 30px;}
 
+#contatoazul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 26px;
+    background-color: #191970;
+    color: white;
+    width: 100%;
+   
+
+}
+
 #contato h2{
    
-    font-size: 2.7em;
+    font-size: 3.5em;
 }
 
 #contato p {
     padding: 7px;
     margin: 1em;
+    font-size: 1.4em;
 }
 
 footer{
@@ -345,5 +360,57 @@ footer a {
     }
 }
 
-/* configurar a responsividade para mobiles 
+
+
+/* configurar a responsividade para mobiles */
+
+
+
+@media (max-width: 530px ) {
+
+    body{
+        width: 144%;
+    }
+    #cortes img{
+        height: 600px;    
+        width: 100%;
+         
+    }
+    #mudança iframe{
+        width: 85vw;
+        height: 1000px;
+        padding: 0px;
+    }
+    #comandos a {
+       
+       
+        margin: 1em;
+    }
+
+
+   
+    
+    
+    }
+    @media (max-width: 350px ) {
+
+        body{
+            width: 172%;
+        }
+        
+        #topo p {
+            font-size: 1.1em;
+        }
+
+        #topo h1 {
+            font-size: 2.5em;
+        }
+
+    }
+
+
+
+
+
+
 /* last functions do site 
