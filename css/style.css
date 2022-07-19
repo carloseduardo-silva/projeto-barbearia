@@ -1,0 +1,349 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: 1c1c1c;
+}
+
+h1, h2, h3{
+    font-family: 'Asap', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #191970;
+    padding: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: YellowTail, sans-serif;
+    font-size: 3.2em;
+    font-weight: 800;
+    padding-bottom: 0.4em;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+nav ul li a {
+    display:inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: Nunito, sans-serif;
+}
+
+
+#topo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../imagens/fundo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    height: 500px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+#topo p {
+    font-size: 1.4em;
+    margin-bottom: 1.5em;
+    max-width: 1000px;
+    
+}
+
+#topo h1 {
+    font-size: 4.7em;
+}
+
+#topo a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: #191970;
+    padding: 10px 30px;
+    margin-bottom: 1.3em;
+    border-radius: 3px;
+}
+
+#sobre{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #191970;
+    color: white;
+    padding: 20px;
+
+}
+
+#sobre h2{
+    font-size: 2.7em;
+    margin-bottom: 1.5em;
+}
+
+#sobre p {
+    font-size: 1.4em;
+    margin-bottom: 1.5em;
+    max-width: 1000px;
+}
+
+#sobre a {
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+    padding: 10px 30px;
+    font-size: 1.3em;
+    background-color: white;
+    border-radius: 3px;
+}
+
+#servicos  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+#servicos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    
+}
+#servicos h3{
+    text-align: center;
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+
+#servicos h2{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1em;
+}
+
+#mudança {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #191970;
+    
+}
+
+#mudança h2 {
+    margin: 1em;
+    font-size: 2.5em;
+    color: white;
+
+}
+#comandos a {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px 30px;
+    background-color: white;
+    color: rgb(73, 73, 73);
+    margin: 1em;
+    border-radius: 5px;
+    margin: 3.5em;
+}
+
+#comandos  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2em;
+    
+   
+}
+
+#mudança iframe{
+    width: 50vw;
+    height: 800px;
+    padding: 0px;
+}
+
+#cortes  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 2.5em;
+    margin: 0.8em;
+    
+}
+
+#cortes img{
+    width: 100%;
+    height: 800px;
+    max-width: 768px;
+    text-align: center;
+}
+
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+
+}
+
+#contatoreal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;}
+
+#contato h2{
+   
+    font-size: 2.7em;
+}
+
+#contato p {
+    padding: 7px;
+    margin: 1em;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #191970;
+    padding: 10px;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    header{  
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+        
+    }
+
+    #sobre{
+        height: 400px;
+        height: 40vh;
+        min-height: 400px;
+
+    }
+   
+    
+    /* configuração da flex box mãe */
+    #servicos  {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        
+
+    }
+    #servicos h3 {
+        font-size: 1.5em;
+    }
+
+
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* configuração da flex box filha para o alinhamento vertical de divs*/
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 180px;
+        padding: 0 30px;
+
+    }
+
+    #cortes h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1em;
+
+    }
+
+    #contatoreal{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 2em;
+    }
+
+    #contatoreal div{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 2em;
+    }
+
+    #contatoreal div p {
+        margin-bottom: 0.5em;
+    }
+
+}
+@media (max-width: 791px){
+
+    #topo h1{
+        font-size: 3em;
+    }
+    #cortes h2 {
+        margin-bottom: 1em;
+    }
+}
+
+/* configurar a responsividade para mobiles 
+/* last functions do site 
