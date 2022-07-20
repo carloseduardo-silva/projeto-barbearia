@@ -1,0 +1,78 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: 1c1c1c;
+    background-color: #191970;
+   
+}
+
+
+ h2, h3{
+    font-family: 'Asap', sans-serif;
+}
+
+#degrade {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+    top: 5%;
+    left: 28.4%;
+    width: 45%;
+    height: 650px;
+    background-image: url(imagens/fundoazul.jpg);
+}
+
+#degrade header h1#perto {
+    padding: 20px;
+    color: rgb(155, 155, 155);
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.8em;
+    margin-bottom: -1.8em;
+}
+#degrade header h1 {
+    padding: 20px;
+    color: rgb(155, 155, 155);
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.8em;
+    margin-bottom: 0.875em;
+}
+
+#info form input{
+  margin-bottom: 4em;
+  background-color: transparent;
+  border-color: transparent ;
+  border-bottom-color:#191970 ;
+  color: rgb(114, 114, 114);
+  margin-right: 2em;
+}
+
+
+
+
+
+
+@media(max-width: 500px) {
+    #degrade{
+        width: 80%;
+        left: 10%;
+    }
+    #info form input{
+        margin-right:0.5em;
+    }
+}
+
+@media(min-width:768px){
+    #info{
+        margin-bottom: 10em;
+    }
+   
+}
