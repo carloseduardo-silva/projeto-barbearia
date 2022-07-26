@@ -9,7 +9,9 @@
 body{
     font-family: 'Nunito', sans-serif;
     color: 1c1c1c;
-    background-color: #1e1e91;
+    background-image: url(imagens/fundo4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
    
 }
 
@@ -31,19 +33,20 @@ body{
     background-image: url(imagens/fundo4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    border: 1px solid black;
+    border: 4px outset  rgba(255, 255, 255, 0.548);
+    border-radius: 5px;
 }
 
 #degrade header h1#perto {
     padding: 20px;
-    color: rgb(155, 155, 155);
+    color: rgb(235, 235, 235);
     font-family: 'Nunito', sans-serif;
     font-size: 2.8em;
     margin-bottom: -1.8em;
 }
 #degrade header h1 {
     padding: 20px;
-    color: rgb(155, 155, 155);
+    color:  rgb(235, 235, 235);
     font-family: 'Nunito', sans-serif;
     font-size: 2.8em;
     margin-bottom: 0.875em;
@@ -54,11 +57,11 @@ body{
   background-color: transparent;
   border-color: transparent ;
   border-bottom-color:#191970 ;
-  color: rgb(141, 140, 140);
+  color: rgb(241, 241, 241);
   margin-right: 2em;
 }
 #marcar {
-    color: rgb(172, 172, 172);
+    color:  rgb(241, 241, 241);
     border-bottom-color:#191970 ;
     background-color: transparent;
     padding: 15px;
@@ -67,8 +70,14 @@ body{
     font-size: 1.2em;
 
 }
+input::placeholder{
+    color: rgb(241, 241, 241) ;
+}
 
-
+input#marcar:hover{
+    transform: translateY(-5px) translateX(-5px);
+    transition: 0.5s;
+}
 
 
 
@@ -80,6 +89,9 @@ body{
     }
     #info form input{
         margin-right:0.5em;
+    }
+    body{
+       background-size: auto; 
     }
    
 }

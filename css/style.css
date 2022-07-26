@@ -215,6 +215,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     padding: 30px;
+    
 
 
 }
@@ -223,7 +224,14 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;}
+    padding: 30px;
+    }
+#emailreal{
+    margin-top: 2em;
+}
+#contatoreal p {
+    margin: 1.5em;
+}
 
 #contatoazul{
     display: flex;
@@ -349,10 +357,15 @@ footer a {
         justify-content: center;
         text-align: center;
         margin: 2em;
+     
     }
+  
 
     #contatoreal div p {
         margin-bottom: 0.5em;
+    }
+    #contatoreal p {
+        margin-right: 2em;
     }
 
 }
@@ -364,6 +377,7 @@ footer a {
     #cortes h2 {
         margin-bottom: 1em;
     }
+    
 }
 
 
