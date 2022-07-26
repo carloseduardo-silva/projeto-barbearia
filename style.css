@@ -9,7 +9,7 @@
 body{
     font-family: 'Nunito', sans-serif;
     color: 1c1c1c;
-    background-color: #191970;
+    background-color: #1e1e91;
    
 }
 
@@ -28,7 +28,10 @@ body{
     left: 28.4%;
     width: 45%;
     height: 650px;
-    background-image: url(imagens/fundoazul.jpg);
+    background-image: url(imagens/fundo4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
 }
 
 #degrade header h1#perto {
@@ -51,8 +54,18 @@ body{
   background-color: transparent;
   border-color: transparent ;
   border-bottom-color:#191970 ;
-  color: rgb(114, 114, 114);
+  color: rgb(141, 140, 140);
   margin-right: 2em;
+}
+#marcar {
+    color: rgb(172, 172, 172);
+    border-bottom-color:#191970 ;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 7px;
+    font-weight: bolder;
+    font-size: 1.2em;
+
 }
 
 
@@ -68,11 +81,30 @@ body{
     #info form input{
         margin-right:0.5em;
     }
+   
 }
 
 @media(min-width:768px){
     #info{
         margin-bottom: 10em;
     }
+
    
+}
+
+@media(min-width: 1200px){
+    #degrade{
+        height: 740px;
+    }
+    #info form input {
+        font-size: 1.3em;
+
+    }
+}
+
+@media(max-width: 655px) {
+    #degrade {
+        height: 710px;
+    }
+
 }
