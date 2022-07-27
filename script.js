@@ -1,19 +1,23 @@
 
 function marcar(){
     resp = document.getElementById('degrade')
-    resp.innerHTML = '<h1 id="lado"> Seu horario para corte+sombrancelha em 10 de julho - 14:00 esta marcado ! </h1> <br> <h1 id="lado1">Agradece pela preferencia. </h1>  '
+    resp.innerHTML = '<h1 id="lado"> Agendamento Concluído! </h1> <br> <h1 id="lado1">Agradece pela preferencia. </h1>  '
 
-    nomeA = document.getElementById('nome')
-    sessionStorage.setItem('nome', nomeA)
+    
 
-    tel1 = document.getElementById('Telefone')
-    telreal = Number(tel1)
-    sessionStorage.setItem('Telefone', 'telreal')
+    var corte1 = document.getElementById('corte')
+    sessionStorage.setItem('corte', corte1.value)
+    corte1.innerHTML = ' '
 
-    corte1 = document.getElementById('corte')
-    sessionStorage.setItem('corte',' corte1')
+    var data1 = document.getElementById('dia')
+    sessionStorage.setItem('dia', data1.value)
+    data1.removeAttribute 
 
-    resp.innerHTML += `<h1  id="lado2"> ${sessionStorage.getItem('nome')} </h1>`
-    resp.innerHTML += `<h1 id="lado2"> ${sessionStorage.getItem('Telefone')} </h1>`
-    resp.innerHTML += `<h1 id="lado2"> ${sessionStorage.getItem('corte')} </h1>`
+    var hora1 = document.getElementById('hora')
+    sessionStorage.setItem('hora', hora1.value)
+    
+
+    resp.innerHTML += `<h1 id="lado2">  Seu horario para ${sessionStorage.getItem('corte')} </h1>`
+    resp.innerHTML += `<h1 id="lado2"> em ${sessionStorage.getItem('dia')} - ${sessionStorage.getItem('hora')} esta marcado. </h1>`
+    
 }
