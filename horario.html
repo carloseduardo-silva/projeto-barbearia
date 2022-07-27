@@ -32,7 +32,8 @@
         <section id="info">
             <form autocomplete="off">
                 <label for="nome"> </label>
-                <input type="text" id="nome" name="inome" placeholder="  Nome " autocomplete="name">
+               
+                <input type="text"  id="nome" name="nome" placeholder="  Nome " autocomplete="name">
                 <br>
 
                 <label for="Telefone"> </label>
@@ -40,17 +41,20 @@
                 <br>
 
                 <label for="Corte"> </label>
-                <input type="text" id="Corte" name="icorte" placeholder="  Corte" style="margin-bottom: 3.2em ;" >
+                <input type="text" id="corte" name="icorte" placeholder="  Corte" style="margin-bottom: 3.2em ;" >
                 <br>
                 <label for="dia"></label>
                 <input type="date" name="idia" id="dia" style="margin-bottom:2.5em;"> 
                 <label for="hora"></label>
-                <input  type="time" name="ihora" id="hora" value="12:00" style="margin-bottom:2.5em;">
-
+                <input  type="time"  name="ihora" id="hora" value="12:00" style="margin-bottom:2.5em;">
+                
+                
             </form>
-            <input id="marcar" type="submit" value="Marcar Horário">
+            <input id="marcar" type="submit" value="Marcar Horário" onclick="marcar()">
         </section>
         
     </div>
 </body>
+<script src="script.js"></script>
 </html>
+
