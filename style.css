@@ -12,6 +12,7 @@ body{
     background-image: url(imagens/fundo4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    
    
 }
 
@@ -27,7 +28,7 @@ body{
     text-align: center;
   
     top: 5%;
-    left: 28.4%;
+    left: 26.4%;
     width: 45%;
     height: 650px;
     background-image: url(imagens/fundo4.jpg);
@@ -61,7 +62,7 @@ body{
   color: rgb(241, 241, 241);
   margin-right: 2em;
 }
-#marcar {
+#marquei {
     position: absolute;
     color:  rgb(241, 241, 241);
     border-bottom-color:#191970 ;
@@ -130,9 +131,12 @@ h1#lado1{
 
 }
 input#hora{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     position: absolute;
     top: 60vh;
-    right: 31%;
+    right: 35%;
     margin-bottom: 4em;
     background-color: transparent;
     border-color: transparent ;
@@ -142,6 +146,9 @@ input#hora{
 
 }
 input#dia{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     position: absolute;
     top: 60vh;
     left: 35%;
@@ -159,14 +166,12 @@ input#dia{
 @media(max-width: 500px) {
     #degrade{
         width: 80%;
-        left: 10%;
+        left: 4vh;
     }
     #info form input{
         margin-right:0.5em;
     }
-    body{
-       background-size: auto; 
-    }
+   
     #degrade h1{
         font-size: 1.2em
     }
@@ -177,15 +182,26 @@ input#dia{
     #info{
         margin-bottom: 18em;
     }
+  
 
    
 }
 @media(max-width:768px){
     input#dia{
-        left: 31%;
+        left: 37%;
+        right: 20%;
     }
     input#hora{
         right: 26%;
+    }
+    body{
+        background-color: #191970;
+        background-image: none;
+    }
+    #degrade{
+        top: 8%;
+        left: 23vh;
+       
     }
 
    
@@ -203,7 +219,7 @@ input#dia{
         left: 37%;
     }
     input#hora{
-        right: 33%;
+        right: 39%;
     }
 }
 

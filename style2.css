@@ -1,0 +1,52 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: 1c1c1c;
+    background-image: url(imagens/fundo4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   
+}
+
+
+ h2, h3{
+    font-family: 'Asap', sans-serif;
+}
+
+#degrade {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+    top: 5%;
+    left: 26.4%;
+    width: 45%;
+    height: 650px;
+    background-image: url(imagens/fundo4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px outset  rgba(255, 255, 255, 0.548);
+    border-radius: 5px;
+}
+
+#marcar {
+    position: absolute;
+    color:  rgb(241, 241, 241);
+    border-bottom-color:#191970 ;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 7px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    top: 42%;
+    left: 31%;
+    right: 31%;
+}
