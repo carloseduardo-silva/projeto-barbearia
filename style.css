@@ -26,7 +26,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-  
+    
     top: 5%;
     left: 26.4%;
     width: 45%;
@@ -62,18 +62,18 @@ body{
   color: rgb(241, 241, 241);
   margin-right: 2em;
 }
-#marquei {
+ form input#marquei {
     position: absolute;
     color:  rgb(241, 241, 241);
-    border-bottom-color:#191970 ;
+    border-color:#191970 ;
     background-color: transparent;
     padding: 15px;
     border-radius: 7px;
     font-weight: bolder;
     font-size: 1.2em;
     top: 85%;
-    left: 13%;
-    right: 13%;
+    left: 16%;
+    right: 10%;
 
 
 }
@@ -118,10 +118,12 @@ h1#lado1{
 
 }
  input#corte{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 51%;
-    left: 84vh;
-    right: 79vh;
+    top: 50.8%;
+    left: 47.5%;
+    transform: translateX(-50%);
     margin-bottom: 4em;
     background-color: transparent;
     border-color: transparent ;
@@ -163,10 +165,11 @@ input#dia{
 
 
 
+
 @media(max-width: 500px) {
     #degrade{
-        width: 80%;
-        left: 4vh;
+        width: 400px;
+        left: 17vh;
     }
     #info form input{
         margin-right:0.5em;
@@ -175,14 +178,16 @@ input#dia{
     #degrade h1{
         font-size: 1.2em
     }
-   
+    input#corte{
+        left: 60%;
+    }
 }
 
 @media(min-width:768px){
     #info{
         margin-bottom: 18em;
     }
-  
+   
 
    
 }
@@ -199,10 +204,15 @@ input#dia{
         background-image: none;
     }
     #degrade{
-        top: 8%;
-        left: 23vh;
+       
+        margin: 0 auto;
+        width: 50%;
        
     }
+    input#corte{
+        left: 49%;
+    }
+  
 
    
 }
@@ -217,15 +227,23 @@ input#dia{
     }
     input#dia{
         left: 37%;
+        top: 65%;
     }
     input#hora{
         right: 39%;
+        top: 65%;
+    }
+    input#corte{
+        top: 54.1%;
+        left: 48%;
+        font-size: 1.3em;
     }
 }
 
 @media(max-width: 655px) {
     #degrade {
-        height: 710px;
+        height: 750px;
+        
     }
     #degrade h1{
         font-size: 1.5em
