@@ -24,3 +24,18 @@ function marcar(){
     resp.innerHTML += `<h1 id="lado2"> em ${sessionStorage.getItem('dia')} - ${sessionStorage.getItem('hora')} esta marcado. </h1>`
     
 }
+
+
+/* 
+function concluido() {
+        var cortereal = document.getElementById('corte')
+        sessionStorage.setItem('corte', cortereal.value)
+        var limpa = document.getElementById('resp')
+        limpa.style.display='none';
+
+        var volta = document.getElementById('resposta')
+        volta.innerHTML = ` Horario marcado para ${sessionStorage.getItem('corte')}. `
+    }
+    
+    testar essa function com output, direcionando os inputs corte, dia e hora para dentro da div flex degrade e alinhando a responsividade
+    */
