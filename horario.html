@@ -30,7 +30,7 @@
         </header>
 
         <section id="info">
-            <form autocomplete="off">
+        
                 <label for="nome"> </label>
                
                 <input type="text"  id="nome" name="nome" placeholder="  Nome " autocomplete="name" required>
@@ -40,32 +40,42 @@
                 <input type="tel" id="Telefone" name="itel" placeholder="  Telefone" autocomplete="tel" required>
                 <br>
 
-
                 
-                <input id="marquei" type="submit" value="Marcar Horário" onclick="marcar()">
-            </form>
+                <label for="corte"> </label>
+                <input type="text" id="corte" style="margin-bottom: 5em ;" placeholder="  Corte" required list="lista">
+                <datalist name="icorte" id="lista" >
+                    <option value="Corte"></option>
+                
+                    <option value="Corte+Sombrancelha"></option>
+                
+                    <option value="Corte+Risco"></option>
+                
+                </datalist>
+                <output id="resposta" ></output>
+                <br>
+                
+
+
+                <label for="dia"></label>
+                <input type="date"  id="dia" style="margin-bottom:2.5em;" required>  
+              
+
+
+                <label for="hora"></label>
+                <input  type="time"   id="hora" value="12:00"  style="margin-bottom:2.5em;" required>
+               
+
+                <input id="marquei" type="button" value="Marcar Horário" onclick="concluido()">
         </section>
         
     </div>
-    <label for="Corte"> </label>
-    <input type="text" id="corte" style="margin-bottom: 3.2em ;" placeholder="  Corte" required list="lista">
-    <datalist name="icorte" id="lista" >
-        <option value="Corte"></option>
-    
-        <option value="Corte+Sombrancelha"></option>
-    
-        <option value="Corte+Risco"></option>
-    
-    </datalist>
     
 
-    <label for="dia"></label>
-    <input type="date" name="idia" id="dia" style="margin-bottom:2.5em;" required>  
-
-    <label for="hora"></label>
-    <input  type="time"  name="ihora" id="hora" value="12:00"  style="margin-bottom:2.5em;" required>
+    
+    
     
     <script src="script.js"></script>
+ 
 </body>
 </html>
 

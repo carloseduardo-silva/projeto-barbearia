@@ -54,7 +54,7 @@ body{
     margin-bottom: 0.875em;
 }
 
-#info form input{
+#info  input{
   margin-bottom: 4em;
   background-color: transparent;
   border-color: transparent ;
@@ -62,7 +62,7 @@ body{
   color: rgb(241, 241, 241);
   margin-right: 2em;
 }
- form input#marquei {
+  input#marquei {
     position: absolute;
     color:  rgb(241, 241, 241);
     border-color:#191970 ;
@@ -117,51 +117,9 @@ h1#lado1{
     top: 83%;
 
 }
- input#corte{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50.8%;
-    left: 47.5%;
-    transform: translateX(-50%);
-    margin-bottom: 4em;
-    background-color: transparent;
-    border-color: transparent ;
-    border-bottom-color:#191970 ;
-    color: rgb(241, 241, 241);
-    margin-right: 2em;
 
-}
-input#hora{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    position: absolute;
-    top: 60vh;
-    right: 32%;
-    margin-bottom: 4em;
-    background-color: transparent;
-    border-color: transparent ;
-    border-bottom-color:#191970 ;
-    color: rgb(241, 241, 241);
-    margin-right: 2em;
 
-}
-input#dia{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    position: absolute;
-    top: 60vh;
-    left: 32%;
-    margin-bottom: 4em;
-    background-color: transparent;
-    border-color: transparent ;
-    border-bottom-color:#191970 ;
-    color: rgb(241, 241, 241);
-    margin-right: 2em;
 
-}
 
 
 
@@ -176,17 +134,7 @@ input#dia{
    
 }
 @media(max-width:768px){
-    input#dia{
-        left: 52%;
-        transform: translateX(-50%);
-        top: 61vh;
-    }
-    input#hora{
-        left: 52%;
-        transform: translateX(-50%);
-        top: 70vh;
-        right: auto;
-    }
+
     body{
         background-color: #191970;
         background-image: none;
@@ -201,15 +149,18 @@ input#dia{
         
        
     }
-    input#corte{
-        left: 51%;
-        top: 51.8%;
+    h1#lado2{
+        font-size: 1.48em;
     }
+    h1#lado1{
+        font-size: 1.8em;
+    }
+ 
   
 }
 
 @media(max-width: 500px) {
-    #info form input{
+    #info  input{
         margin-right:0.5em;
         font-size: 1em;
         left: 14%;
@@ -222,30 +173,16 @@ input#dia{
         
     }
     #degrade header h1{
-        font-size: 2.3em
-    }
-    input#corte{
-        left: 53%;
-        top: 47.3%;
-        
-    }
-    input#dia{
-       
-        top: 57.5vh;
-    }
-    input#hora{
-        top: 67vh;
-        
-}}
+        font-size: 2.3em      
+}
+}
 
-@media (max-width: 355px) {
+@media (max-width: 400px) {
     #degrade{
         width: 80%;
         left: 9.5%;
     }
-    input#corte{
-        left: 49.2%;
-    }
+  
 }
 
 @media(min-width: 1200px){
@@ -255,19 +192,6 @@ input#dia{
     #info form input {
         font-size: 1.3em;
 
-    }
-    input#dia{
-        left: 37%;
-        top: 65%;
-    }
-    input#hora{
-        right: 39%;
-        top: 65%;
-    }
-    input#corte{
-        top: 55%;
-        left: 48%;
-        font-size: 1.3em;
     }
 }
 
