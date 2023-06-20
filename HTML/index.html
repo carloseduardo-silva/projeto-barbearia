@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet"> 
@@ -16,13 +16,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
     
     <title>Kadu Corte's</title>
     <style>
-        img.icone{
+        .icone{
             display: flex;
             width: 100px;
             height: 100px;
+        }
+
+        .icon{
+            display: flex;
+            font-size: 7em;
+            
         }
 
     </style>
@@ -63,28 +72,28 @@
 
     <div>
         
-        <img src="imagens/cilindroP.jpg" alt="simbolo-corte" class="icone">
+        <img src="/imagens/cilindroP.jpg" alt="simbolo-corte" class="icone">
         <h3> Barbearia </h3>
         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium eaque nostrum explicabo repudiandae voluptatibus voluptas doloremque, dolorum deserunt culpa placeat debitis ipsum cupiditate .</p>
     </div>
 
     <div>
 
-        <img src="imagens/maquinaP.png" alt="maquina-corte" class="icone">
+        <img src="/imagens/maquinaP.png" alt="maquina-corte" class="icone">
         <h3> Degradê </h3>
         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium eaque nostrum explicabo repudiandae voluptatibus voluptas doloremque, dolorum deserunt culpa placeat debitis ipsum cupiditate .</p>
     </div>
     
     <div>
 
-        <img src="imagens/navalhaP.png" alt="navalha-corte" class="icone">
+        <img src="/imagens/navalhaP.png" alt="navalha-corte" class="icone">
         <h3> Navalhados </h3>
         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium eaque nostrum explicabo repudiandae voluptatibus voluptas doloremque, dolorum deserunt culpa placeat debitis ipsum cupiditate .</p>
     </div>
 
     <div>
 
-        <img src="imagens/tesouraP.jpg" alt="tesoura-corte" class="icone">
+        <img src="/imagens/tesouraP.jpg" alt="tesoura-corte" class="icone">
         <h3> Cortes na Tesoura </h3>
         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium eaque nostrum explicabo repudiandae voluptatibus voluptas doloremque lorem amet sit dolor .</p>
     </div>
@@ -94,26 +103,26 @@
 <section id="mudança">
     <h2> Antes e Depois </h2>
    
-    <iframe  name="video" src="video.html" frameborder="0"></iframe>
+    <iframe  name="video" src="/video.html" frameborder="0"></iframe>
    
     <div id="comandos">
-        <div><a  target="video" href="video.html">Antes</a></div>
+        <div><a  target="video" href="/video.html">Antes</a></div>
         
-        <div><a href="videodepois.html" target="video" > Cortar    </a></div>
+        <div><a href="/videodepois.html" target="video" > Cortar    </a></div>
     </div>
 
 
 </section>
     
 
+<h2 id="cortes-title"> Cortes </h2>
 <section id="cortes">
    
-    <h2> Cortes </h2>
  
-    <img src="imagens/WhatsApp Image 2022-07-13 at 14.52.08.jpeg" alt="corte-degrade">
-    <img src="imagens/WhatsApp Image 2022-07-13 at 14.48.20.jpeg" alt="corte-degrade">
-    <img src="imagens/WhatsApp Image 2022-07-13 at 14.48.38.jpeg" alt="corte-degrade">
-    <img src="imagens/WhatsApp Image 2022-07-13 at 14.48.55.jpeg" alt="corte-degrade">
+    <img src="/imagens/WhatsApp Image 2022-07-13 at 14.52.08.jpeg" alt="corte-degrade">
+    <img src="/imagens/WhatsApp Image 2022-07-13 at 14.48.20.jpeg" alt="corte-degrade">
+    <img src="/imagens/WhatsApp Image 2022-07-13 at 14.48.38.jpeg" alt="corte-degrade">
+    <img src="/imagens/WhatsApp Image 2022-07-13 at 14.48.55.jpeg" alt="corte-degrade">
 
 </section>
 
@@ -125,19 +134,23 @@
 
 
     <div id="contatoreal">
-        <div> <img src="imagens/tel.png" alt="telefone" class="icone">
-        
-        </div>
+
+        <span class="material-symbols-outlined icon">phone_in_talk</span>
+
+
         <p>
             <a id="telefone" href="tel:(13) 97402-2220"> (13) 97402-2220</a>
         </p>
 
-        <div id="emailreal"> <img src="imagens/email.png" alt="email" class="icone"></div>
+        <div id="emailreal"> <span class="material-symbols-outlined icon">
+            mail
+            </span></div>
         <p>
             <a href="mailto:carloseduardokadu2004@gmail.com"> carloseduardokadu2004@gmail.com</a>
         </p>
+        
     </div>
-
+        </div>
 
 </section>
 

@@ -7,6 +7,9 @@
 
 
 body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Nunito', sans-serif;
     color: 1c1c1c;
     background-image: url(imagens/fundo4.jpg);
@@ -22,16 +25,13 @@ body{
 }
 
 #degrade {
-    position:absolute;
     display: flex;
     flex-direction: column;
     text-align: center;
-    
-    top: 5%;
-    left: 26.4%;
+    background-image: url(imagens/fundo4.jpg);
     width: 45%;
     height: 650px;
-    background-image: url(imagens/fundo4.jpg);
+    margin-top: 2em;
     background-size: cover;
     background-repeat: no-repeat;
     border: 4px outset  rgba(255, 255, 255, 0.548);
@@ -58,22 +58,21 @@ body{
   margin-bottom: 4em;
   background-color: transparent;
   border-color: transparent ;
-  border-bottom-color:#191970 ;
+  border-bottom-color:#e9e9f0 ;
   color: rgb(241, 241, 241);
   margin-right: 2em;
 }
   input#marquei {
-    position: absolute;
+    margin: auto;
+    width: 58%;
     color:  rgb(241, 241, 241);
-    border-color:#191970 ;
+    border-color:#dcdcde ;
     background-color: transparent;
-    padding: 15px;
+    padding: 10px;
     border-radius: 7px;
     font-weight: bolder;
     font-size: 1.2em;
-    top: 85%;
-    left: 16%;
-    right: 10%;
+
 
 
 }
@@ -126,9 +125,7 @@ h1#lado1{
 
 
 @media(min-width:768px){
-    #info{
-        margin-bottom: 18em;
-    }
+   
    
 
    
@@ -136,17 +133,15 @@ h1#lado1{
 @media(max-width:768px){
 
     body{
-        background-color: #191970;
+        background-color: #101dac; 
         background-image: none;
+        
     }
     #degrade{
        
-        margin: 0 auto;
-        width: 60%;
-        left: 22.5%;
-        height: 750px;
+        width: 65%;
+        height: 675px;
             
-        
        
     }
     h1#lado2{
