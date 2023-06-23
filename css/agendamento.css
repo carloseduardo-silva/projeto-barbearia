@@ -12,7 +12,7 @@ body{
     justify-content: center;
     font-family: 'Nunito', sans-serif;
     color: 1c1c1c;
-    background-image: url(imagens/fundo4.jpg);
+    background-image: url(/imagens/fundo4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -28,9 +28,9 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-image: url(imagens/fundo4.jpg);
+    background-image: url(/imagens/fundo4.jpg);
     width: 45%;
-    height: 650px;
+    height: 90vh;
     margin-top: 2em;
     background-size: cover;
     background-repeat: no-repeat;
@@ -62,6 +62,9 @@ body{
   color: rgb(241, 241, 241);
   margin-right: 2em;
 }
+
+
+
   input#marquei {
     margin: auto;
     width: 58%;
@@ -182,7 +185,7 @@ h1#lado1{
 
 @media(min-width: 1200px){
     #degrade{
-        height: 740px;
+        height: 90vh;
     }
     #info form input {
         font-size: 1.3em;
