@@ -5,7 +5,7 @@ module.exports =  (app)=>{
 
         res.statusCode = 200;
         res.setHeader("Content-Type", "text/html")
-        res.end("<h1> Oi ne caralhummm </h1>")
+        res.end("<h1> REST API FUNCIONANDO NO LOCAL HOST4000, PRONTO PARA CONSUMIR INFOs A PARTIR DO NEDB E FORNECER PARA O LOCAL HOST3000(CLIENT SIDE/DOCUMENT-HTML/SITE)</h1>")
      
     })
     
