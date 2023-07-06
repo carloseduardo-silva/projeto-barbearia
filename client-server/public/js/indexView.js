@@ -1,0 +1,1 @@
+var barbearia = new barbeariaController();

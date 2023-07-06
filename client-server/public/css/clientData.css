@@ -41,23 +41,32 @@ div#blue p {
     font-size: 1.4em;
 }
 
-section#servicos{
+section#client-info{
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 2em;
     
-}
 
-div#servicos-filho{
-    display: flex;
-    justify-content: center;
-    gap: 1em 3em;
-    flex-wrap: wrap;
-    width: 80%;
-   
+
 
 }
+form.form-horizontal{
+    width: 60vw;
+    max-width: 550px;
+
+}
+
+input.form-control{
+
+    height: 38px;
+    font-size: 16px;
+    border-bottom: 1.5px solid rgb(6, 67, 157) ;
+}
+
+label{
+    font-size: 19px;
+}
+
+
 
 h2{
     text-align: center;
@@ -71,7 +80,7 @@ div#botoes{
     justify-content: space-between;
 }
 
-#botao-proximo{
+#botao-marcar{
     display: flex;
     margin-right: 1em;
 }
