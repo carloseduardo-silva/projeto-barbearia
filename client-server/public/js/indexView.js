@@ -1,1 +1,1 @@
-var barbearia = new barbeariaController();
+window.app = new barbeariaController();
