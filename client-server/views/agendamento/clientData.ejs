@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/clientData.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+
 
     <title>Dados do cliente</title>
 </head>
@@ -15,10 +17,10 @@
     <nav>
       <ul class="nav nav-tabs">
          
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="about.html">Sobre</a></li>
-          <li role="presentation"><a href="haircuts.html">Serviços</a></li>
-          <li role="presentation"><a href="#">Contato</a></li>
+        <li  role="presentation" class="active"><a style="color:  rgb(6, 67, 157);" href="#">HOME</a></li>
+        <li role="presentation"><a href="about.html">SOBRE</a></li>
+        <li role="presentation"><a href="haircuts.html">SERVIÇOS</a></li>
+        <li role="presentation"><a href="#">CONTATO</a></li>
         </ul>
   </nav>
   
@@ -38,24 +40,22 @@
         <div class="form-group">
           <label for="nome" class="col-sm-2 control-label">Nome</label>
           <div class="col-sm-10">
-            <input type="name" class="form-control" id="nome" placeholder="Nome">
+            <input required type="name" class="form-control" id="nome" placeholder="Nome">
           </div>
         </div>
 
         <div class="form-group">
           <label for="email" class="col-sm-2 control-label">Email</label>
-          
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" placeholder="Email">
+            <input required type="email" class="form-control" id="email" placeholder="Email">
           </div>
         </div>
         
 
         <div class="form-group">
             <label for="telefone" class="col-sm-2 control-label">Telefone</label>
-
             <div class="col-sm-10">
-              <input type="telefone" class="form-control" id="telefone" placeholder="telefone">
+              <input required type="telefone" class="form-control" id="telefone" placeholder="telefone">
             </div>
 
           </div>
@@ -64,15 +64,21 @@
       </form>
   
   </section>
-  
   <div id="botoes">
     <div id="botao-voltar"><a href="time.html" > <span class="material-symbols-outlined" style="font-size: 68px;">
     arrow_circle_left
     </span></a> </div>
     
-    <div id="botao-marcar"><a target="_blank" href="confirmed.html" > <span class="material-symbols-outlined" style="font-size: 68px;">
-        arrow_circle_right
-        </span></a> </div>
+    <div id="botao-marcar">
+      <button class="submit" type="submit">
+        <a target="_blank" href="confirmed.html">
+          <span class="material-symbols-outlined" style="font-size: 68px;">
+          arrow_circle_right
+          </span>
+        </a>
+      </button>
+    </div>
+  
 </div>
 
 
@@ -80,7 +86,5 @@
 
     
 </body>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="/client-server/public/js/barbeariaController.js"></script>
-<script src="/client-server/public/js/indexView.js"></script>
-</html>
+
+

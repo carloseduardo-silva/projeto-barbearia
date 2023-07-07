@@ -16,7 +16,7 @@
    initEvents(){
 
     this.marcarHorarioBtn.addEventListener("click", ()=>{
-        console.log(this.clientname)
+        console.log(this.clientname.innerHTML)
 
     })
 

@@ -62,7 +62,7 @@ nav ul li a {
     background-repeat: no-repeat;
     background-position: center;
    
-    height: 500px;
+    height: 580px;
     padding: 20px;
     color: white;
     text-align: center;
@@ -70,7 +70,7 @@ nav ul li a {
 
 #topo p {
     font-size: 1.4em;
-    margin-bottom: 1.5em;
+    margin: 1em 0em 1.7em 0em;
     max-width: 1000px;
     
 }
@@ -82,10 +82,10 @@ nav ul li a {
 #topo a{
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.8em;
     background-color: #191970;
-    padding: 10px 30px;
-    margin-bottom: 1.3em;
+    padding: 12px 35px;
+    
     border-radius: 5px;
 }
 
@@ -208,7 +208,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4em 0px 2.8em 0px;
+    padding: 4em 0px 0em 0px;
     color: white;
     width: 100%;
    
@@ -303,7 +303,7 @@ footer a {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        padding: 4.8em 3em 3em 3em;
+        padding: 2.5em 3em 3em 3em;
         }
     #contatoreal p {
     margin-bottom: 3em;
