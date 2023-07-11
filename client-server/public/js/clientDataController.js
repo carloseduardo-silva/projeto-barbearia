@@ -1,4 +1,4 @@
-   class barbeariaController{
+   class clientDataController{
 
    constructor(){
 
@@ -6,6 +6,8 @@
     this.clientemail = document.querySelector("input#email")
     this.clienttelefone = document.querySelector("input#telefone")
     this.marcarHorarioBtn = document.querySelector("#botao-marcar")
+    this.corteBtn = document.querySelector("#corte-marcar")
+    this.inputDate = document.querySelector("#schedule")
 
     this.initEvents();
     
@@ -22,12 +24,15 @@
         let name = this.clientname.value
         let email = this.clientemail.value
         let tel = this.clienttelefone.value
+        //let schedule = this.inputDate.value
 
         let dados = [name, email, tel]
         console.log(dados)
         this.getFirebaseRef().push().set(dados)
 
     })
+
+    
 
     
     

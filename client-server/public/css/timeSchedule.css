@@ -26,6 +26,20 @@ section#image{
    
 }
 
+section#horario{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+#horario input{
+
+    font-size: 2em;
+}
+
+
 div#blue{
     display: flex;
     justify-content: center;

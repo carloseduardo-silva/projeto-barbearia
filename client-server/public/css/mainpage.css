@@ -19,13 +19,13 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #191970;
+    background-color: white;
     padding: 15px;
 }
 
 nav a{
     text-decoration: none;
-    color: white;
+    color: #191970;
     font-family: YellowTail, sans-serif;
     font-size: 3.2em;
     font-weight: 800;
@@ -48,7 +48,7 @@ nav ul li a {
     padding: 14px 0;
     width: 100%;
     text-decoration: none;
-    color: white;
+    color:#191970;
     font-size: 1.5em;
     font-family: Nunito, sans-serif;
 }
@@ -93,21 +93,7 @@ header#topo{
 
 
 
-#mudança {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-    background-color: #191970;
-    
-}
 
-#mudança h2 {
-    margin: 0.5em 0em 0em 0em;;
-    font-size: 2.5em;
-    color: white;
-
-}
 #comandos a {
     text-decoration: none;
     font-size: 1.5em;
@@ -158,28 +144,43 @@ header#topo{
     max-width: 768px;
     text-align: center;
     border: 3px solid #1e1e85;
+}   
+
+section#galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: #191970;
+    padding: 3em 1em;
+
 }
 
 
 #contato{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    background-color: #191970;
-   
+    justify-content: center;
+    background-image: url(../imagens/depositphotos_357465560-stock-photo-on-a-black-surface-are.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4em 1em;
+    
     
 }
 
 #contato h2{
    
     font-size: 3.5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.4em;
 }
 
 #contato a {
     text-decoration: none;
     color: rgb(77, 77, 77);
-    padding: 10px 30px;
+    padding: 0px 10px;
     font-size: 1.3em;
     background-color: white;
     border-radius: 3px;
@@ -187,30 +188,42 @@ header#topo{
  
 }
 
-#contatoreal{
+div#iframeloc{
+
+margin-right: 2em;
+
+}
+
+#contatoicons{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 3em 3em 4em 3em;
+    
     }
 
-#contatoreal p a {
+#contatoicons p a {
     background-color: transparent;
     color: white;
     font-size: 18px;
     
 }
-    
 
-#contatoreal p {
-   padding: 2em 1em;
+#contatoicons p {
+   color: white;
+   font-size: 18px;
+   padding: 0.8em 0.8em 0.8em 0.6em;
 }
 
-#contatoazul{
+div.divicon{
+    display: flex;
+    justify-content: row;
+    padding: 1em 0em;
+}
+
+
+#contatotitle{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4em 0px 0em 0px;
     color: white;
     width: 100%;
    
@@ -224,10 +237,10 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #191970;
+    background-color: white;
     padding: 1em;
-    color: white;
-    border-top: 1px solid white
+    color: #191970;
+    
 }
 
 footer a {
@@ -321,7 +334,8 @@ footer a {
     }
     
     }
-    @media (max-width: 350px ) {
+
+@media (max-width: 350px ) {
 
         body{
             width: 172%;
@@ -337,7 +351,14 @@ footer a {
 
     }
 
+@media (max-width: 920px ) {
 
+
+    #contato{
+        flex-direction: column;
+    }
+    
+}
 
 
 
