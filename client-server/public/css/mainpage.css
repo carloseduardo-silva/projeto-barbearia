@@ -63,6 +63,7 @@ header#topo{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
    
     height: 580px;
     padding: 20px;
@@ -126,9 +127,10 @@ header#topo{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1.5em 0em 3em 0em;
+    padding: 0.5em 0em 0.5em 0em;
     font-size: 2.5em;
     margin: 0.8em;
+    
     
 }
 #cortes-title {
@@ -146,27 +148,38 @@ header#topo{
     border: 3px solid #1e1e85;
 }   
 
+.botoes-fotos{
+    display: flex;
+    justify-content: space-around;
+    gap: 8em;
+    text-align: center;
+
+
+}
+
 section#galeria{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
     color: #191970;
-    padding: 3em 1em;
+    padding: 5em 1em;
 
 }
 
 
 #contato{
     display: flex;
+    height: 580px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: url(../imagens/depositphotos_357465560-stock-photo-on-a-black-surface-are.jpg);
+    background-image: url(../imagens/fundo1original.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 4em 1em;
+    padding: 2em 1em;
+    background-attachment: fixed;
     
     
 }
@@ -190,13 +203,21 @@ section#galeria{
 
 div#iframeloc{
 
-margin-right: 2em;
+margin-right: 4vw;
 
+}
+iframe{
+ 
+    box-shadow: 3px 3px 16px black;
 }
 
 #contatoicons{
+    
     display: flex;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.401);
+    border-radius: 10px;
+    padding: 1em
     
     }
 
@@ -215,7 +236,7 @@ margin-right: 2em;
 
 div.divicon{
     display: flex;
-    justify-content: row;
+    
     padding: 1em 0em;
 }
 
@@ -246,6 +267,14 @@ footer{
 footer a {
     text-decoration: none;
     color: white;
+}
+
+.selected{
+    display: block;
+}
+
+.hide{
+    display: none;
 }
 
 
@@ -356,6 +385,25 @@ footer a {
 
     #contato{
         flex-direction: column;
+        height: 670px;
+        
+    }
+
+    div#iframeloc {
+        margin-right: 0em;
+    }
+    iframe{
+        height: 260px;
+        box-shadow: 3px 3px 16px black;
+    }
+    #contatoicons{
+        padding: 0.7em 1.3em;
+        margin-top: 4.2vh;
+
+    }
+    div.divicon{
+
+        font-size: 13px;
     }
     
 }
