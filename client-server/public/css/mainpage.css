@@ -19,13 +19,15 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: white;
-    padding: 15px;
+    background-color:rgba(255, 255, 255, 0.149);
+    padding: 12px;
+    margin-bottom: 18vh;
+    width: 98.2%;
 }
 
 nav a{
     text-decoration: none;
-    color: #191970;
+    color: #f8f8f8;
     font-family: YellowTail, sans-serif;
     font-size: 3.2em;
     font-weight: 800;
@@ -48,15 +50,14 @@ nav ul li a {
     padding: 14px 0;
     width: 100%;
     text-decoration: none;
-    color:#191970;
+    color:white;
     font-size: 1.5em;
     font-family: Nunito, sans-serif;
 }
 
 
-header#topo{
+header{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-image: url(../imagens/fundo3.jpg);
@@ -64,32 +65,41 @@ header#topo{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-   
-    height: 580px;
-    padding: 20px;
+    height: 100vh;
+    padding: 0px 0px 20px 0px;
     color: white;
     text-align: center;
 }
 
+section#topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+
+
+}
+
 #topo p {
     font-size: 1.4em;
-    margin: 1em 0em 1.7em 0em;
+    margin: 1.8em 0em 2.6em 0em;
     max-width: 1000px;
     
 }
 
 #topo h1 {
     font-size: 4.7em;
+
 }
 
-#topo a{
+#topo a.agendamento{
     color: white;
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 2em;
     background-color: #191970;
-    padding: 12px 35px;
-    
-    border-radius: 5px;
+    padding: 14px 42px;
+    border-radius: 25px;
 }
 
 
@@ -117,11 +127,7 @@ header#topo{
    
 }
 
-#mudança iframe{
-    width: 50vw;
-    height: 800px;
-    padding: 0px;
-}
+
 
 #cortes  {
     display: flex;
@@ -145,7 +151,8 @@ header#topo{
     height: 300px;
     max-width: 768px;
     text-align: center;
-    border: 3px solid #1e1e85;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.76);
+    border: 0.08px solid black;
 }   
 
 .botoes-fotos{
@@ -161,7 +168,7 @@ section#galeria{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color:  #e4e4e4;
     color: #191970;
     padding: 5em 1em;
 
@@ -258,7 +265,7 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: white;
+    background-color:  #e4e4e4;
     padding: 1em;
     color: #191970;
     
@@ -271,6 +278,15 @@ footer a {
 
 .selected{
     display: block;
+}
+
+.selectedleftside{
+    display: block;
+}
+
+.selectedrightside{
+    display: block;
+    
 }
 
 .hide{
@@ -292,12 +308,7 @@ footer a {
         width: 70%;
     }
 
-    header{  
-        height: 600px;
-        height: 60vh;
-        justify-content: center;
-        
-    }
+   
     
    
 
@@ -328,12 +339,24 @@ footer a {
 
 }
 @media (max-width: 791px){
+
+    nav{
+        margin-bottom: 3em;
+    }
+
     #contatoreal{
         padding: 2.4em;
     }
 
     #topo h1{
         font-size: 3em;
+    }
+    #topo p{
+        font-size: 1em;
+    }
+    
+    #topo a.agendamento{
+        font-size: 1.2em;
     }
    
     
@@ -354,7 +377,10 @@ footer a {
     }
 }
 
+@media(max-height:850px){
+ 
 
+}
 
 @media (max-width: 530px ) {
 
