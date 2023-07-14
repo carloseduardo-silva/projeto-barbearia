@@ -18,8 +18,8 @@ section#image{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-top:2px solid #191970;
-    border-bottom:10px solid #191970 ;
+    border-top:2px solid   #f1b707;
+    border-bottom:10px solid    #f1b707 ;
     height: 50vh;
     padding: 20px 20px 0px 20px;
     display: flex;
@@ -32,14 +32,18 @@ div#blue{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color:  #191970;
-    color: rgb(240, 240, 240);
+    background-color:    #f1b707;
+    color:rgb(24, 24, 24);
     width:185px;
     height: 70px;
     padding: 0.3em 0.2em 0.1em 0.2em;
     border-radius: 13px;
     font-weight: bolder;
     margin-bottom: -2.5em;
+}
+
+.btn-primary{
+    border-color: #f1b707;
 }
 
 div#blue p {
@@ -89,7 +93,7 @@ div#botoes{
 
 button.btn{
     background-color: white;
-    color:   #191970;
+    color:     black;
     border-radius: 15px;
     padding: 0.5em 2.5em;
     padding: 12px 0px;
@@ -98,15 +102,15 @@ button.btn{
 }
 
 button.btn:hover{
-    background-color:   #191970;
+    background-color:      #f1b707;
 }
 
 a {
-   color:  #191970;
+   color:     #f1b707;
 }
 
 footer{
-    background-color:  #191970;
+    background-color:     #f1b707;
     bottom: 0px;
 
 }
