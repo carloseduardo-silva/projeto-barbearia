@@ -24,19 +24,29 @@
         let name = this.clientname.value
         let email = this.clientemail.value
         let tel = this.clienttelefone.value
-        //let schedule = this.inputDate.value
+        
+        let dados = {
+            name,
+            email,
+            tel}
+        this.toSessionStorage(dados);
 
-        let dados = [name, email, tel]
         console.log(dados)
         this.getFirebaseRef().push().set(dados)
 
     })
 
     
-
-    
-    
 }
+
+toSessionStorage(dados){
+
+  sessionStorage.setItem('name', dados.name)
+  sessionStorage.setItem('email', dados.email)
+  sessionStorage.setItem('tel', dados.tel)
+
+}
+
 //passar o script src no html.
 connectFireBase(){
 

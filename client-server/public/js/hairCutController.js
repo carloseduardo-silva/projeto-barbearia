@@ -1,7 +1,8 @@
 class hairCutController{
 
     constructor(){
-
+        this.hairCutTypebtnSchedule = document.querySelector('#corte-marcar')
+        
 
 
         this.initEvents();
@@ -10,9 +11,27 @@ class hairCutController{
 
     initEvents(){
         this.connectFireBase()
+        this.hairCutTypebtnSchedule.addEventListener("click", ()=>{
+         
+            let dados = {
+               }
+            this.toSessionStorage(dados); 
+        
+        })
+
+        console.log(document.querySelectorAll('.btn'))
 
 
         
+    }
+
+    toSessionStorage(dados){
+
+       // sessionStorage.setItem('', dados.)
+    
+    
+    
+    
     }
 
     connectFireBase(){

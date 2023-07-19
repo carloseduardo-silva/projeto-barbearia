@@ -1,7 +1,8 @@
 class timeScheduleController{
 
     constructor(){
-
+        this.timebtnSchedule = document.querySelector('#botao-proximo')
+        this.inputDate = document.querySelector("#schedule")
 
 
 
@@ -13,9 +14,26 @@ class timeScheduleController{
 
     initEvents(){
         this.connectFireBase()
+        this.timebtnSchedule.addEventListener("click", ()=>{
+            let date = this.inputDate.value
+            
+            let dados = {
+            date}
+            this.toSessionStorage(dados); 
+        
+        })
 
 
         
+    }
+
+    toSessionStorage(dados){
+
+        sessionStorage.setItem('date', dados.date)
+    
+    
+    
+    
     }
 
     connectFireBase(){
