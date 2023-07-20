@@ -99,10 +99,24 @@ button.btn{
     padding: 12px 0px;
     margin: 0.5em 0.3em;
     width: 220px;
+    font-size: 1.5em;
+    border: 1px solid black;
 }
 
 button.btn:hover{
-    background-color:      #f1b707;
+   background-color: #dddddd;
+   border: 1px solid black;
+}
+
+button.selected:hover{
+    background-color: #ffcb30;
+    border: 1px solid black;
+ }
+
+button.selected{
+    background-color:#f1b707;
+    border: 1px solid black;
+
 }
 
 a {

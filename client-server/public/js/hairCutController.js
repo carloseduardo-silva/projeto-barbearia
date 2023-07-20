@@ -10,16 +10,30 @@ class hairCutController{
 
 
     initEvents(){
+
         this.connectFireBase()
+
+        let buttons = document.querySelectorAll('.btn')
+        
+        buttons.forEach(btn =>{
+            btn.addEventListener('click', e=>{
+                btn.classList.toggle('selected')
+            })
+        })
+
         this.hairCutTypebtnSchedule.addEventListener("click", ()=>{
          
-            let dados = {
-               }
-            this.toSessionStorage(dados); 
+    
+            let i = 0
+            document.querySelectorAll('.selected').forEach(btn=>{
+                sessionStorage.setItem(`servico ${i}`, btn.innerHTML)
+                console.log(btn.innerHTML)
+                i++
+            })
         
         })
 
-        console.log(document.querySelectorAll('.btn'))
+        
 
 
         
