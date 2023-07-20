@@ -14,7 +14,7 @@ class hairCutController{
         this.connectFireBase()
 
         let buttons = document.querySelectorAll('.btn')
-        
+
         buttons.forEach(btn =>{
             btn.addEventListener('click', e=>{
                 btn.classList.toggle('selected')
@@ -23,7 +23,7 @@ class hairCutController{
 
         this.hairCutTypebtnSchedule.addEventListener("click", ()=>{
          
-    
+
             let i = 0
             document.querySelectorAll('.selected').forEach(btn=>{
                 sessionStorage.setItem(`servico ${i}`, btn.innerHTML)
