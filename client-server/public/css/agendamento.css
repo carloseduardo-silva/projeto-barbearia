@@ -26,16 +26,24 @@ nav{
     display: flex;
     justify-content: flex-end;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.51);
+    background-color: rgba(255, 255, 255, 0.28);
     padding: 0.2em 1em 0em 0em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.729);
 }
 ul{
     
     justify-content: flex-end;
 }
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: transparent;
+}
+
+a:focus, a:hover{
+    color: #dec929;
+}
 
 nav ul li a {
-    color: #dec929;
+    color: #ffffff;
     background-color: transparent;
     border: none;
     font-size: 1.8em;
@@ -66,12 +74,11 @@ h4{
     font-size: 20px;
     color: rgb(164, 163, 163);
     margin-right: 2px;
-    margin: 2px 0px;
+    margin: 2px 2px 2px 0px;
 }
 
 div#infos{
     color: white;
-    width: 350px;
     margin: 0.1em 5em;
     font-size: 20px;
 }
@@ -79,6 +86,7 @@ div#infos{
 
 
  p {
+    display: inline-block;
     margin: 0px;
 }
 

@@ -39,13 +39,7 @@
     
 }
 
-toSessionStorage(dados){
 
-  sessionStorage.setItem('name', dados.name)
-  sessionStorage.setItem('email', dados.email)
-  sessionStorage.setItem('tel', dados.tel)
-
-}
 
 //passar o script src no html.
 connectFireBase(){

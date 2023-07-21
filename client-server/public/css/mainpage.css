@@ -90,17 +90,18 @@ section#topo{
 
 #topo h1 {
     font-size: 4.7em;
-    color:#f8c62ff8;
+    color:#fffffff8;
 
 }
 
 #topo a.agendamento{
-    color:rgb(250, 248, 248);
+    color:rgb(9, 9, 9);
     text-decoration: none;
     font-size: 2em;
     background-color:#f5b802f8;
     padding: 14px 42px;
     border-radius: 25px;
+    border: 1px solid black;
 }
 
 
@@ -169,7 +170,10 @@ section#galeria{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(50, 50, 50);
+    background-image: url(../imagens/fundogaleria2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color:#fffffff8;
     padding: 5em 1em;
 
@@ -182,12 +186,12 @@ section#galeria{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: url(../imagens/fundo1original.avif);
+    background-color: rgb(12, 12, 12);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     padding: 2em 1em;
-    background-attachment: fixed;
+ 
     
     
 }
@@ -223,7 +227,9 @@ iframe{
     
     display: flex;
     flex-direction: column;
-    background-color:rgba(0, 0, 0, 0.300);
+    background-image: url(../imagens/fundogaleria2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
     padding: 1em
     
@@ -231,13 +237,15 @@ iframe{
 
 #contatoicons p a {
     background-color: transparent;
-    color:#fffffff8;
+    color:white;
     font-size: 18px;
     
 }
 
+
+
 #contatoicons p {
-   color:#fffffff8;
+   color:white;
    font-size: 18px;
    padding: 0.8em 0.8em 0.8em 0.6em;
 }
@@ -266,9 +274,10 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color:  #e4e4e4;
+    background-color:  rgb(12, 12, 12);
     padding: 1em;
-    color:#f5b802f8;
+    color:#ebb209f8;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
