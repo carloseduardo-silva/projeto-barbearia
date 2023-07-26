@@ -137,7 +137,7 @@ section#topo{
     align-items: center;
     padding: 0.5em 0em 0.5em 0em;
     font-size: 2.5em;
-    margin: 0.8em;
+    margin: 1.5em;
     
     
 }
@@ -166,23 +166,38 @@ section#topo{
 
 }
 
+
+.botoes-fotos button{
+    background-color: transparent;
+    border: none;
+    color: #f5b802f8;
+   
+
+}
+
 section#galeria{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-image: url(../imagens/fundogaleria2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color:#fffffff8;
     padding: 5em 1em;
+    height: 90vh;
 
+}
+
+section#galeria h1{
+    font-size: 4em;
 }
 
 
 #contato{
     display: flex;
-    height: 580px;
+    height: 90vh;
     flex-direction: row;
     align-items: center;
     justify-content: center;
