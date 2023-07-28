@@ -137,10 +137,16 @@ section#topo{
     align-items: center;
     padding: 0.5em 0em 0.5em 0em;
     font-size: 2.5em;
-    margin: 1.5em;
-    
-    
+    margin: 1.5em -5px;
+    gap: 10px;
+    overflow-x: auto;
+
 }
+
+#cortes::-webkit-scrollbar {
+    display: none;
+  }
+
 #cortes-title {
     text-align: center;
     margin-top: 2em;
@@ -156,6 +162,35 @@ section#topo{
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.76);
     border: 0.08px solid black;
 }   
+
+div#container{
+    display: flex;
+    align-items: center;
+    max-width: 440px;
+
+}
+
+
+#anterior-foto,
+#proxima-foto{
+  
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    color: #fff;
+    transition: all 400ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.6;
+    cursor: pointer;
+    border: none;
+    height: 300px;
+
+}
+
+#anterior-foto:hover,
+#proxima-foto:hover {
+  opacity: 1;
+}
 
 .botoes-fotos{
     display: flex;
@@ -301,17 +336,14 @@ footer a {
     color: white;
 }
 
+
 .selected{
-    display: block;
+    opacity: 1;
 }
 
-.selectedleftside{
-    display: block;
-}
-
-.selectedrightside{
-    display: block;
-    
+.item{
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
 }
 
 .hide{

@@ -14,7 +14,23 @@ class mainPageController{
 
     initEvents(){
 
-        
+        this.anteriorBtn.addEventListener('click', e =>{
+
+            let i = 1
+
+            this.images.forEach(e =>{
+
+                if(e.classList.value === 'selected'){
+                    this.images[i].classList.remove('selected')
+                    this.images[i].classList.add('item')
+                    this.images[i-1].classList.remove('item')
+                    this.images[i-1].classList.add('selected')
+
+
+                }
+            })
+
+        })
 
         this.proximoBtn.addEventListener('click', e=>{
 
@@ -24,19 +40,29 @@ class mainPageController{
 
             if(i == (this.images.length -1)){
                 this.images[i].classList.remove('selected')
-                this.images[i].classList.add('hide')
+                this.images[i].classList.add('item')
+              
 
-                this.images[0].classList.remove('hide')
+                this.images[0].classList.remove('item')
                 this.images[0].classList.add('selected')
+
+                 this.images[0].scrollIntoView({
+                    behavior: "smooth",
+                    inline: "center"
+                  });
             }
 
             if(e.classList.value ==='selected'){
 
                 this.images[i].classList.remove('selected')
-                this.images[i].classList.add('hide')
-                
-                this.images[i+1].classList.remove('hide')
+                this.images[i].classList.add('item')
+                this.images[i+1].classList.remove('item')
                 this.images[i+1].classList.add('selected')
+
+                this.images[i].scrollIntoView({
+                    behavior: "smooth",
+                    inline: "center"
+                  });
             }
             else{i++}
             
