@@ -46,7 +46,8 @@ class mainPageController{
                 this.itens[currentItem].scrollIntoView({
                     behavior: "smooth",
                     inline: "center"
-                  });
+                  }); 
+                  
                  
                 this.itens[currentItem].classList.add('selected');
              });;
