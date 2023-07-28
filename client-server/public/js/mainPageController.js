@@ -4,9 +4,9 @@ class mainPageController{
 
         this.sectionCortesEl = document.querySelector("#cortes")
         this.images = document.querySelectorAll('#cortes img')
-        this.proximoBtn = document.querySelector ('#proxima-foto')
-        this.anteriorBtn = document.querySelector('#anterior-foto')
-
+        this.btnsControll = document.querySelectorAll('button')
+        this.sectionCortes = document.querySelector('#cortes')
+        this.itens = document.querySelectorAll('.item')
 
         this.initEvents();
     }
@@ -14,63 +14,48 @@ class mainPageController{
 
     initEvents(){
 
-        this.anteriorBtn.addEventListener('click', e =>{
+        const maxItens = this.itens.length
 
-            let i = 1
+        let currentItem = 0 
 
-            this.images.forEach(e =>{
+        this.btnsControll.forEach( btn =>{
 
-                if(e.classList.value === 'selected'){
-                    this.images[i].classList.remove('selected')
-                    this.images[i].classList.add('item')
-                    this.images[i-1].classList.remove('item')
-                    this.images[i-1].classList.add('selected')
+            btn.addEventListener('click', e=>{
 
+             let isLeft = e.target.classList.contains('arrow-left');
 
-                }
+             if(isLeft){
+                currentItem -= 1;
+             }
+             else{
+                currentItem += 1;
+             }
+
+             if(currentItem >= maxItens ){
+                currentItem = 0;
+             }
+
+             if(currentItem < 0){
+
+                currentItem = maxItens -1
+             }
+             this.itens.forEach( item =>{
+
+                item.classList.remove('selected')
+
+                this.itens[currentItem].scrollIntoView({
+                    behavior: "smooth",
+                    inline: "center"
+                  });
+                 
+                this.itens[currentItem].classList.add('selected');
+             });;
             })
 
         })
 
-        this.proximoBtn.addEventListener('click', e=>{
 
-            let i = 0 
-
-            this.images.forEach(e =>{
-
-            if(i == (this.images.length -1)){
-                this.images[i].classList.remove('selected')
-                this.images[i].classList.add('item')
-              
-
-                this.images[0].classList.remove('item')
-                this.images[0].classList.add('selected')
-
-                 this.images[0].scrollIntoView({
-                    behavior: "smooth",
-                    inline: "center"
-                  });
-            }
-
-            if(e.classList.value ==='selected'){
-
-                this.images[i].classList.remove('selected')
-                this.images[i].classList.add('item')
-                this.images[i+1].classList.remove('item')
-                this.images[i+1].classList.add('selected')
-
-                this.images[i].scrollIntoView({
-                    behavior: "smooth",
-                    inline: "center"
-                  });
-            }
-            else{i++}
-            
-        })
-
-
-        }
-        )   
+       
     }
 
     nextPhoto(){
