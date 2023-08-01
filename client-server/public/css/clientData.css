@@ -115,6 +115,11 @@ a {
    color: #f1b707;
 }
 
+a:focus, a:hover{
+    color: rgba(176, 175, 175, 0.73) ;
+}
+
+
 
 @media (min-height: 850px ) {
 

@@ -5,7 +5,10 @@ class timeScheduleController{
         this.timebtnSchedule = document.querySelector('#botao-proximo')
         this.inputTime = document.querySelector('#time-schedule')
         this.inputDate = document.querySelector("#schedule")
-
+        this.HourSection = document.querySelector('section#horario')
+        this.h1 = document.querySelector('#h1')
+        this.buttonNextDay= document.querySelector("#nextDay")
+        this.buttonPreviousDay= document.querySelector("#previousDay")
 
 
 
@@ -16,8 +19,14 @@ class timeScheduleController{
 
     initEvents(){
         this.connectFireBase()
+
+        this.currentDay();
+
+
         this.timebtnSchedule.addEventListener("click", ()=>{
-            let date = this.inputDate.value
+            
+            this._date;
+            let date = this._date;
             let time = this.inputTime.value
             
             let dados = {
@@ -27,8 +36,59 @@ class timeScheduleController{
         
         })
 
+        
+
 
         
+    }
+
+    currentDay(){
+
+        let day = new Date();
+        
+
+        let currentday = day.getDate()
+
+
+        this.h1.innerHTML = `${day.getDate()}/0${day.getMonth() + 1}/${day.getFullYear()}`
+
+
+        this.buttonPreviousDay.addEventListener('click', e =>{
+
+            if(currentday <= 1 ){
+
+                currentday = 2
+            }
+
+            this.h1.innerHTML = `${currentday - 1}/0${day.getMonth() + 1}/${day.getFullYear()}`
+
+            currentday--
+            
+            this._date = `${currentday}/0${day.getMonth() + 1}/${day.getFullYear()}`
+
+        })
+        
+        this.buttonNextDay.addEventListener('click', e =>{
+
+            if (currentday >= 31){ 
+
+                currentday = 0
+
+            }
+
+            this.h1.innerHTML = `${currentday + 1}/0${day.getMonth() + 1}/${day.getFullYear()}`
+
+            currentday++
+
+            
+            this._date = `${currentday}/0${day.getMonth() + 1}/${day.getFullYear()}`
+       
+
+        })
+
+        
+        return this._date = `${currentday}/0${day.getMonth() + 1}/${day.getFullYear()}`
+
     }
 
     toSessionStorage(dados){

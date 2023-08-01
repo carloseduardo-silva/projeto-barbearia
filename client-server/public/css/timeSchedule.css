@@ -26,20 +26,6 @@ section#image{
    
 }
 
-section#horario{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5em;
-}
-
-#horario input{
-
-    font-size: 2em;
-}
-
-
 div#blue{
     display: flex;
     justify-content: center;
@@ -58,6 +44,54 @@ div#blue p {
     font-size: 1.3em;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+section#horario-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section#horario{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(244, 244, 244);
+    margin-top: 5em;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 250px;
+    width: 300px;
+    padding: 0.5em;
+}
+
+#horario input{
+
+    font-size: 2em;
+    background-color: transparent;
+    border: none;
+}
+
+#horario div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1em;
+}
+
+#horario button{
+   
+    border: none;
+    border-radius: 15px;
+    font-size: 2em;
+    display: flex;
+    margin-right: 5px;
+    
+}
+
+
+
 
 section#servicos{
     display: flex;
@@ -114,6 +148,11 @@ button.btn:hover{
 a {
    color:   #f1b707;
 }
+
+a:focus, a:hover{
+    color: rgba(176, 175, 175, 0.73) ;
+}
+
 
 
 @media (min-height: 850px ) {
