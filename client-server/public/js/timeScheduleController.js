@@ -9,6 +9,7 @@ class timeScheduleController{
         this.h1 = document.querySelector('#h1')
         this.buttonNextDay= document.querySelector("#nextDay")
         this.buttonPreviousDay= document.querySelector("#previousDay")
+        this.sectionHorario = document.querySelector('section#horario')
 
 
 
@@ -66,6 +67,8 @@ class timeScheduleController{
             
             this._date = `${currentday}/0${day.getMonth() + 1}/${day.getFullYear()}`
 
+            this.sectionHorario.classList.toggle('grey')
+
         })
         
         this.buttonNextDay.addEventListener('click', e =>{
@@ -83,7 +86,8 @@ class timeScheduleController{
             
             this._date = `${currentday}/0${day.getMonth() + 1}/${day.getFullYear()}`
        
-
+            
+            this.sectionHorario.classList.toggle('grey')
         })
 
         

@@ -54,30 +54,49 @@ section#horario-box{
 section#horario{
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(244, 244, 244);
+    
     margin-top: 5em;
-    border: 1px solid black;
+    border: 3px double #f1b607be;
     border-radius: 20px;
-    height: 250px;
+    height: 265px;
     width: 300px;
     padding: 0.5em;
 }
 
+h1{
+    margin-top: 16px;
+    margin-bottom: 14px;
+}
+
 #horario input{
 
-    font-size: 2em;
-    background-color: transparent;
-    border: none;
+    font-size: 2.38em;
+    background-color: white;
+    border: 2px solid #f1b607ed;
+    border-radius: 10px;
+    padding: 2px 7px;
 }
 
 #horario div {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 1em;
+    margin-bottom: 0.3em;
+    
+}
+
+#input-time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#input-time label{
+    font-size: 16px;
+    margin-bottom: 6.4px;
 }
 
 #horario button{
@@ -87,8 +106,15 @@ section#horario{
     font-size: 2em;
     display: flex;
     margin-right: 5px;
+    color: #f1b707;
+    background-color: transparent;
     
 }
+
+#horario button:hover{
+    color: black;
+}
+
 
 
 
