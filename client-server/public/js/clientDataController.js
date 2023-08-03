@@ -8,6 +8,8 @@
     this.marcarHorarioBtn = document.querySelector("#botao-marcar")
     this.corteBtn = document.querySelector("#corte-marcar")
     this.inputDate = document.querySelector("#schedule")
+    this.menuHamburguer = document.querySelector('#menu-hamburguer')
+    this.mainMenudiv = document.querySelector('#list')
 
     this.initEvents();
     
@@ -36,10 +38,14 @@
 
     })
 
+    this.menuHamburguer.addEventListener('click', e =>{
+
+        this.mainMenudiv.classList.toggle('show')
+
+
+    })
     
 }
-
-
 
 //passar o script src no html.
 connectFireBase(){

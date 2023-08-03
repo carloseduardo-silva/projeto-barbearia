@@ -1,8 +1,10 @@
 class hairCutController{
 
     constructor(){
+
         this.hairCutTypebtnSchedule = document.querySelector('#corte-marcar')
-        
+        this.menuHamburguer = document.querySelector('#menu-hamburguer')
+        this.mainMenudiv = document.querySelector('#list')
 
 
         this.initEvents();
@@ -33,7 +35,12 @@ class hairCutController{
         
         })
 
-        
+        this.menuHamburguer.addEventListener('click', e =>{
+
+            this.mainMenudiv.classList.toggle('show')
+
+
+    })
 
 
         

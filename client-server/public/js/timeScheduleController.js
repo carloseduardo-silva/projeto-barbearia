@@ -10,7 +10,8 @@ class timeScheduleController{
         this.buttonNextDay= document.querySelector("#nextDay")
         this.buttonPreviousDay= document.querySelector("#previousDay")
         this.sectionHorario = document.querySelector('section#horario')
-
+        this.menuHamburguer = document.querySelector('#menu-hamburguer')
+        this.mainMenudiv = document.querySelector('#list')
 
 
 
@@ -37,7 +38,12 @@ class timeScheduleController{
         
         })
 
-        
+        this.menuHamburguer.addEventListener('click', e =>{
+
+            this.mainMenudiv.classList.toggle('show')
+    
+    
+        })
 
 
         
