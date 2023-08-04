@@ -6,6 +6,8 @@ class confirmedController{
         this._servicoEl  = document.querySelector('#servico-el')
         this._dateEl = document.querySelector('#date-el')
         this._timeEl = document.querySelector('#time-el')
+        this.menuHamburguer = document.querySelector('#menu-hamburguer')
+        this.mainMenudiv = document.querySelector('#list')
         
         this.init()
 
@@ -23,6 +25,13 @@ class confirmedController{
 
             }}
         this._servicoEl.innerHTML = servicos.join(" + ")
+
+        this.menuHamburguer.addEventListener('click', e =>{
+
+            this.mainMenudiv.classList.toggle('show')
+    
+    
+        })
         
     }
 }
