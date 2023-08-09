@@ -118,6 +118,30 @@ button.selected{
     border: 1px solid black;
 
 }
+button#corte:hover::after{
+    content: ' - 20R$';
+    
+}
+button#barba:hover::after{
+ 
+    content: ' - 10R$';
+    
+}
+
+button#pintura:hover::after{
+    
+    content: ' - 30R$';
+    
+}
+
+button#sombrancelha:hover::after{
+    
+    content: ' - 5R$';
+    
+}
+.selected:hover::after{
+    content: '';
+}
 
 a {
    color:     #f1b707;

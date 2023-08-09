@@ -17,6 +17,10 @@ class hairCutController{
 
         let buttons = document.querySelectorAll('.btn')
 
+
+
+       
+
         buttons.forEach(btn =>{
             btn.addEventListener('click', e=>{
                 btn.classList.toggle('selected')
@@ -29,6 +33,33 @@ class hairCutController{
             let i = 0
             document.querySelectorAll('.selected').forEach(btn=>{
                 sessionStorage.setItem(`servico ${i}`, btn.innerHTML)
+
+                switch(btn.innerHTML){
+
+                    case "CORTE CABELO":
+                        sessionStorage.setItem(`ValorServico ${i}`, '20')
+
+                    break;
+
+                    case "FAZER A BARBA":
+                        sessionStorage.setItem(`ValorServico ${i}`, '10')
+
+                    break;
+
+                    case "PINTURA":
+                        sessionStorage.setItem(`ValorServico ${i}`, '30')
+
+                    break;
+
+                    case "SOMBRANCELHA":
+                        sessionStorage.setItem(`ValorServico ${i}`, '5')
+
+                    break;
+
+
+
+                }
+
                 console.log(btn.innerHTML)
                 i++
             })
