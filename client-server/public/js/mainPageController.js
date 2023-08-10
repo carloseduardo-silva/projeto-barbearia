@@ -4,10 +4,11 @@ class mainPageController{
 
         this.sectionCortesEl = document.querySelector("#cortes")
         this.images = document.querySelectorAll('#cortes img')
-        this.btnsControll = document.querySelectorAll('button')
+        this.btnsControll = document.querySelectorAll('#container button')
         this.sectionCortes = document.querySelector('#cortes')
         this.itens = document.querySelectorAll('.item')
-
+        this.btnAnimation = document.querySelector('#animation')
+        this.galeriaContainer = document.querySelector('#container')
         this.initEvents();
     }
 
@@ -56,11 +57,21 @@ class mainPageController{
         })
 
 
-       
+        this.btnAnimation.addEventListener('click', e =>{
+         this.Animation()
+        })
+
+        //codar condição de scroll para aparecer animações, + atributo para executar animação de aparição apenas uma vez
     }
 
     nextPhoto(){
         
+    }
+
+    Animation(){
+      this.galeriaContainer.classList.toggle('animar')
+
+
     }
 }
 

@@ -168,13 +168,6 @@ section#topo{
     border: 0.08px solid black;
 }   
 
-div#container{
-    display: flex;
-    align-items: center;
-    max-width: 640px;
-
-}
-
 
 #anterior-foto,
 #proxima-foto{
@@ -274,7 +267,8 @@ margin-right: 4vw;
 
 }
 iframe{
- 
+    border: 2.5px solid #f5b802f8;
+    border-radius: 10px;
     box-shadow: 3px 3px 16px black;
 }
 
@@ -355,6 +349,38 @@ footer a {
     display: none;
 }
 
+.animar{
+    animation-name: slide;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.12s;
+
+}
+
+div#container{
+    display: flex;
+    align-items: center;
+    max-width: 640px;
+    opacity: 0;
+    transform: translateX(-500px);
+
+}
+
+
+@keyframes slide {
+
+    from{
+        opacity: 0;
+
+    }
+
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
 
 
 
