@@ -4,10 +4,29 @@ var schedule = require('../inc/schedule')
 var clients = require('../inc/clients')
 var contacts = require('../inc/contacts')
 var users = require('../inc/users')
+var admin = require('../inc/admin')
 
 router.get('/', function(req, res, next){
-res.render('admin/index', {title: 'AdminPage'})
+
+admin.dashBoard().then( data =>{
+    res.render('admin/index', {
+        title: 'AdminPage',
+        data
+    })
+   
+
 })
+
+})
+
+router.get('/login', function(req, res, next){
+    res.render('admin/login', {title: 'AdminPage'})
+    })
+
+router.get('/logout', function(req, res, next){
+    res.render('admin/login', {title: 'AdminPage'})
+    })
+
 
 router.get('/index', function(req, res, next){
     res.render('admin/index', {title: 'AdminPage'})
@@ -42,11 +61,11 @@ router.get('/schedule', function(req, res, next){
 
 router.get('/contacts', function(req, res, next){
 
-    contacts.getContacts().then(data =>{
+    contacts.getContacts().then(results=>{
       
         res.render('admin/contacts', {
             title: 'AdminPage',
-            data
+            data: results
         })
         })
 
