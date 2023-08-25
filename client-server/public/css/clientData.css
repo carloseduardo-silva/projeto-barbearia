@@ -4,7 +4,7 @@ body{
     
 }
 *{
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Inconsolata', monospace;
 }
 
 li{
@@ -26,7 +26,7 @@ section#image{
    
 }
 
-div#blue{
+div#center{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -40,9 +40,11 @@ div#blue{
     margin-bottom: -2.5em;
 }
 
-div#blue p {
-    font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+div#center p {
+    font-size: 1.88em;
+    font-family: 'Inconsolata', monospace;
+    word-spacing: -1px;
+    line-height: 29px;
 }
 
 section#client-info{
