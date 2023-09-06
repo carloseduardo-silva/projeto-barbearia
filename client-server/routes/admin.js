@@ -19,9 +19,38 @@ admin.dashBoard().then( data =>{
 
 })
 
-router.get('/login', function(req, res, next){
-    res.render('admin/login', {title: 'AdminPage'})
+router.post('/login', function(req, res, next){
+
+    console.log('POSTTTT')
+
+   /* if(!req.body.email){
+        users.render(res, req,"Preencha o campo email!")
+    }   
+    else if(!req.body.password){
+        users.render(res, req,"Preencha o campo senha!")
+    } 
+    else{
+
+        users.login(req.body.email, req.body.password).then(user =>{
+            console.log(user)
+            req.session.user = user
+            res.redirect('/admin')
+
+        }).catch(err =>{
+
+            console.log('error')
+            users.render(res, req, err.message || err)
+
+        })
+    
+    
+    } */
     })
+
+router.get('/login', function(req, res, next){
+
+    users.render(res, req , null)
+})
 
 router.get('/logout', function(req, res, next){
     res.render('admin/login', {title: 'AdminPage'})
